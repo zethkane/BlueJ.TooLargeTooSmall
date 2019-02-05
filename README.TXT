@@ -1,12 +1,27 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
+# ZCW-MicroLabs-JavaFundamentals-TooLargeTooSmall
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+# Guessing Game; Too Large Too Small
+
+## **Objective:**
+* Write a guessing game which prompts a user to guess a mystery number within some range.
+* After every guess the program should display some variation of "too large", "too small", "correct guess", respectively.
+* Upon termination, the program should display the number of guesses before successfully guessing correctly.
+* A number that is input consecutively, should register as a single guess.
+
+### **Purpose:**
+* To establish familiarity with
+    * Control Flow
+    * Conditionals
+    * User input
+    * The `Random` class
+    * Object instantation/declaration
+    * Method invokation
+
+### **Resources:**
+* [Fundamental Programming Structures](https://zipcoder.github.io/reveal-slides/fundament-programing-stuctures.html#/)
+
+## Unit Test
+No Unit Test
+
+## What's Next?
+* The next lab can be found [here](https://github.com/Zipcoder/ZCW-MicroLabs-JavaFundamentals-SumOrProduct)
