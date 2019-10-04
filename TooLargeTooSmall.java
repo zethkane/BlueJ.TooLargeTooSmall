@@ -6,18 +6,28 @@
  * @version (a version number or a date)
  */
 public class TooLargeTooSmall {
-    private int chosenNum;
+    private Integer chosenNum;
 
     /**
      * Constructor for objects of class TooLargeTooSmall
      */
-    public TooLargeTooSmall() {
+    public TooLargeTooSmall(Integer seed) {
         // initialise instance variables
-        chosenNum = 0;
+        chosenNum = seed;
     }
 
     public Boolean run() {
 
         return true;
+    }
+
+    public Integer guess(Integer g) {
+        if (g > chosenNum) {
+            return 1;
+        } else if (g == chosenNum) {
+            return 0;
+        } else {
+            return -1;
+        }
     }
 }

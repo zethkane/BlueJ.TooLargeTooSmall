@@ -41,10 +41,17 @@ public class TooLargeTooSmallTest
     }
 
     @Test
-    public void TestGameRun()
+    public void TestRun2()
     {
-        TooLargeTooSmall tooLarge1 = new TooLargeTooSmall();
-        assertEquals(true, tooLarge1.run());
+        TooLargeTooSmall tooLarge1 = new TooLargeTooSmall(5);
+        assertEquals(Integer.valueOf(0), tooLarge1.guess(5));
+    }
+    
+    @Test
+    public void TestRun1()
+    {
+        TooLargeTooSmall tooLarge1 = new TooLargeTooSmall(5);
+        assertEquals(Integer.valueOf(-1), tooLarge1.guess(4));
     }
 }
 
