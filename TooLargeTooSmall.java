@@ -2,8 +2,8 @@
 /**
  * Write a description of class TooLargeTooSmall here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @Zeth (your name)
+ * @02/05/2020 (a version number or a date)
  */
 public class TooLargeTooSmall {
     private Integer chosenNum;
@@ -17,8 +17,18 @@ public class TooLargeTooSmall {
     }
     
     public Integer guess(Integer g) {
+        int result = 0;
         
-        return chosenNum;
+        if (chosenNum < g){
+            result =  1;
+        }  
+        else if (chosenNum > g){
+            result = -1;
+        }
+        else{
+            result =  0;
+        }
+         return result;
 
     }
 }
